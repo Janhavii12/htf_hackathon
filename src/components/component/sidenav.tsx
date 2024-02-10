@@ -31,9 +31,11 @@ export default function SideNav() {
           <Button className="bg-[#a1d777] text-left text-md w-40">
             Classroom
           </Button>
-          <Button className="bg-[#a1d777] text-left text-md w-40">
+         <link href="../../(afterlogin)/quizzes">
+         <Button className="bg-[#a1d777] text-left text-md w-40">
             Quizzes
           </Button>
+         </link> 
           <Button className="bg-[#a1d777] text-left text-md w-40">
             Performance
           </Button>

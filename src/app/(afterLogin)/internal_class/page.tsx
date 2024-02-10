@@ -53,9 +53,9 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import meet from "../../../assests_janhavi/meet.png";
-import upload from "../../../assests_janhavi/upload.png";
-import resources from "../../../assests_janhavi/resources.png";
+import meet from "../../../../assests_janhavi/meet.png";
+import upload from "../../../../assests_janhavi/upload.png";
+import resources from "../../../../assests_janhavi/resources.png";
 import { Upload } from "lucide-react";
 import Link from "next/link";
 
@@ -116,7 +116,7 @@ export default function internal_class() {
               <CardContent>
                 <div className="flex items-center justify-between">
                 <div className="ml-12 mr-10 mt-6 " >
-                <Link href="/upload_file">
+                <Link href="">
                 <Button className="bg-[#a1d777]" >
                       upload
                     </Button>

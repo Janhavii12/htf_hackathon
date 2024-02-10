@@ -65,7 +65,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
       
       <div className="min-h-screen bg-gray-100 w-screen">
         <div className="flex-1 p-6">
-          <h1 className="text-2xl font-semibold mb-6">Upload a File</h1>
+          <h1 className="text-2xl font-semibold mb-6">Resources</h1>
             </div>
         
           <div className="grid place-items-center max-h-screen">
@@ -92,11 +92,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
     </ScrollArea>
   
             </div>
-                <div className=" mt-6 bottom-5  flex flex-col items-center transform translateX(-50%)  rounded-md">
-                <Button className="bg-[#a1d777]" >
-                     Upload
-                    </Button>
-                </div>
+                
             
           </div>
       

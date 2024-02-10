@@ -52,16 +52,9 @@ import maths from "../../../../assets/mathsclass.jpg";
 import science from "../../../../assets/scienceclass.jpg";
 import computerscience from "../../../../assets/csclass.jpg";
 
-<<<<<<< HEAD:src/app/classroom/page.tsx
 
-let name: string = "Class id";
-let user_id: string="user id";
-
-
-export default function classroom() {
-=======
 export default function Classroom() {
->>>>>>> main:src/app/(afterLogin)/classroom/page.tsx
+
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
       <div className="flex-1 p-6">
