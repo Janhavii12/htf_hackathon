@@ -21,7 +21,7 @@ const data02 = [
 
 export default function charts() {
   return (
-    <div className="flex w-[100%] h-[100%]"> 
+    <div className="flex w-[100%] h-[100%] mb-[6rem] mr-[6rem]">
       <ResponsiveContainer width="50%" height="50%">
         <PieChart width={400} height={400}>
           <Pie
