@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/ixTj6H5RgtQ
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+"use client";
 import { Input } from "@/components/ui/input";
 import {
   SelectValue,
@@ -15,16 +16,16 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function signup() {
+export default function Signup() {
   return (
-    <div className="flex h-screen">
+    <div className="flex items-center justify-center w-screen h-screen">
       <div
-        className="w-1/2 bg-cover"
+        className="absolute inset-0 bg-cover"
         style={{
-          backgroundImage: "../../assets/images/signup.jpg",
+          backgroundImage: `url('/assets/signup.jpg')`,
         }}
       />
-      <div className="w-1/2 flex flex-col justify-center px-16">
+      <div className=" w-[40vw] flex flex-col justify-center px-16">
         <h1 className="text-5xl font-bold mb-4">Sign up</h1>
         <p className="mb-12">Enter your details to start quizzing</p>
         <form className="space-y-6">

@@ -48,13 +48,13 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import profile from "../../../assets/profile.png";
-import economy from "../../../assets/economy.jpg";
-import biology from "../../../assets/quiz2.jpg";
-import english from "../../../assets/quiz1.jpeg";
-import start from "../../../assets/startquiz.jpg";
+import profile from "../../../../assets/profile.png";
+import economy from "../../../../assets/economy.jpg";
+import biology from "../../../../assets/quiz2.jpg";
+import english from "../../../../assets/quiz1.jpeg";
+import start from "../../../../assets/startquiz.jpg";
 
-export default function quizzes() {
+export default function Quizzes() {
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
       <div className="flex-1 p-6">

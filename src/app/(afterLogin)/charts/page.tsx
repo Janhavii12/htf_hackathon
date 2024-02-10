@@ -1,5 +1,5 @@
 "use client";
-import { PieChart, Pie, Legend, Tooltip, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Tooltip, ResponsiveContainer } from "recharts";
 
 const data01 = [
   { name: "Group A", value: 400 },
@@ -19,9 +19,9 @@ const data02 = [
   { name: "Group F", value: 4800 },
 ];
 
-export default function charts() {
+export default function Charts() {
   return (
-    <div className="flex w-[100%] h-[100%]"> 
+    <div className="flex items-center justify-center w-screen h-screen">
       <ResponsiveContainer width="50%" height="50%">
         <PieChart width={400} height={400}>
           <Pie
@@ -37,8 +37,8 @@ export default function charts() {
           <Pie
             dataKey="value"
             data={data02}
-            cx={500}
-            cy={200}
+            cx="50%"
+            cy="50%"
             innerRadius={40}
             outerRadius={80}
             fill="#82ca9d"

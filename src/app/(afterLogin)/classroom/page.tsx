@@ -47,17 +47,21 @@ import {
   Card,
 } from "@/components/ui/card";
 import Image from "next/image";
-import english from "../../../assets/englishclass.jpg";
-import maths from "../../../assets/mathsclass.jpg";
-import science from "../../../assets/scienceclass.jpg";
-import computerscience from "../../../assets/csclass.jpg";
+import english from "../../../../assets/englishclass.jpg";
+import maths from "../../../../assets/mathsclass.jpg";
+import science from "../../../../assets/scienceclass.jpg";
+import computerscience from "../../../../assets/csclass.jpg";
 
+<<<<<<< HEAD:src/app/classroom/page.tsx
 
 let name: string = "Class id";
 let user_id: string="user id";
 
 
 export default function classroom() {
+=======
+export default function Classroom() {
+>>>>>>> main:src/app/(afterLogin)/classroom/page.tsx
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
       <div className="flex-1 p-6">
@@ -65,7 +69,7 @@ export default function classroom() {
         <div className="grid grid-cols-4 gap-6">
           <Card className="w-full">
             <CardHeader>
-              <CardTitle>{name}</CardTitle>
+              <CardTitle>English Class</CardTitle>
               <CardDescription>
                 Learn the basics of English language!
               </CardDescription>
@@ -75,25 +79,19 @@ export default function classroom() {
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
-
-
-
           <Card className="w-full">
             <CardHeader>
-              <CardTitle>{name}</CardTitle>
+              <CardTitle>Science Class</CardTitle>
               <CardDescription>Explore the scientific rules!</CardDescription>
             </CardHeader>
             <CardContent>
-              <Image src={science} height={100} width={200} alt="Img" />
+              <Image src={science} height={200} width={200} alt="Img" />
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
-
-
-
           <Card className="w-full">
             <CardHeader>
-              <CardTitle>{name}</CardTitle>
+              <CardTitle>Maths Class</CardTitle>
               <CardDescription>Explore the functions of Maths!</CardDescription>
             </CardHeader>
             <CardContent>
@@ -101,18 +99,15 @@ export default function classroom() {
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
-
-
-
           <Card className="w-full">
             <CardHeader>
-              <CardTitle>{name}</CardTitle>
+              <CardTitle>Computer Science Class</CardTitle>
               <CardDescription>
                 Review your codes with ultimate coders!
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Image src={computerscience} height={100} width={200} alt="Img" />
+              <Image src={computerscience} height={200} width={200} alt="Img" />
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
