@@ -53,10 +53,12 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import profile from "../../../assets/profile.png";
+import meet from "../../../assests_janhavi/meet.png";
+import upload from "../../../assests_janhavi/upload.png";
+import resources from "../../../assests_janhavi/resources.png";
+import { Upload } from "lucide-react";
 
-
-let name: string = "Class name";
+let name: string = "Class id";
 
 export default function homepage() {
   return (
@@ -67,48 +69,49 @@ export default function homepage() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-between items-center ml-3 " >
+      <div className="flex flex-row justify-between items-center ml-6 " >
         <div className="justify-between">
-          <div className="flex-1 p-6 bg-white mr-3 ">
-          <div className="flex items-center justify-between">
-                 
-            <h1 className="text-4xl font-semibold mb-6 ml-12 "> <span>Join a Meet</span></h1>
+        <div >
+          <div className="flex-1 p-6 bg-white mr-3 rounded-lg ">
+            <div className="ml-24 mb-6">
+            <Image src={meet} height={50} width={90} alt="Img"  />
+            </div>          
+            <h1 className="text-4xl font-semibold mb-6 ml-12 mr-16 "><span>Join meet
+            </span></h1>
           </div>
 
-          <div className="mt-12 mr-12 ml-12 bg-gray-100">
-            <Card className="w-100%">
+          <div className="mt-10 mr-12 ml-12 bg-gray-100">
+            <Card className="w-100% ">
               <CardContent>
-               <div className="flex items-center justify-between">
-                  
-                  <h3 className="text-lg font-semibold mt-6">{name}</h3>
-                  <div className="ml-12 mt-6" >
+              <div className="flex items-center justify-between">
+                <div className="ml-12 mr-6 mt-6" >
                     <Button className="bg-[#a1d777]" >
                       open meet
                     </Button>
-                  </div>
-                  
+                  </div>                  
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
-
         </div>
 
 
         <div >
-          <div className="flex-1 p-6 bg-white mr-3 ">
-            <h1 className="text-4xl font-semibold mb-6 ml-12 "><span>Upload
-            </span></h1>
+          <div className="flex-1 p-6 bg-white mr-3  rounded-lg  ">
+          <div className="ml-24 mb-6">
+            <Image src={upload} height={50} width={90} alt="Img"  />
+            </div>
+            <h1 className="text-4xl font-semibold mb-6 ml-20 mr-20 "><span>  <span>     Upload
+            </span></span></h1>
           </div>
-          <div className="mt-12 mr-12 ml-12 bg-gray-100">
+          <div className="mt-10 mr-16 ml-16 bg-gray-100">
             <Card className="w-100%">
               <CardContent>
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold mt-6">{name}</h3>
-                  <div className="ml-12 mt-6 " >
+                <div className="ml-12 mr-10 mt-6 " >
                     <Button className="bg-[#a1d777]" >
-                      open meet
+                      upload
                     </Button>
                   </div>
                 </div>
@@ -117,18 +120,21 @@ export default function homepage() {
           </div>
         </div>
 
-        <div className="mr-32">
-          <div className="flex-1 p-6 bg-white">
-            <h1 className="text-4xl font-semibold mb-6 ml-12 "><span>Resources</span></h1>
+        <div className="mr-52">
+          <div className="flex-1 p-6 bg-white  rounded-lg ">
+          <div className="ml-32 mb-6 ">
+            <Image src={resources} height={50} width={90} alt="Img"  />
+            </div>
+            <h1 className="text-4xl font-semibold mb-6 ml-16 mr-16 ">Resources</h1>
           </div>
-          <div className="mt-12 mr-12 ml-12 bg-gray-100">
+          <div className="mt-10 mr-12 ml-12 bg-gray-100">
             <Card className="w-100%">
               <CardContent>
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold mt-6">{name}</h3>
-                  <div className="ml-12 mt-6" >
+                <div className="flex items-center justify-between ">
+                 
+                  <div className="ml-12 mr-3 mt-6" >
                     <Button className="bg-[#a1d777]" >
-                      open meet
+                      resources
                     </Button>
                   </div>
                 </div>
