@@ -55,6 +55,8 @@ import computerscience from "../../../assets/csclass.jpg";
 
 let name: string = "Class id";
 let user_id: string="user id";
+
+
 export default function classroom() {
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
