@@ -52,7 +52,7 @@ import maths from "../../../../assets/mathsclass.jpg";
 import science from "../../../../assets/scienceclass.jpg";
 import computerscience from "../../../../assets/csclass.jpg";
 
-export default function classroom() {
+export default function Classroom() {
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
       <div className="flex-1 p-6">
@@ -76,7 +76,7 @@ export default function classroom() {
               <CardDescription>Explore the scientific rules!</CardDescription>
             </CardHeader>
             <CardContent>
-              <Image src={science} height={100} width={200} alt="Img" />
+              <Image src={science} height={200} width={200} alt="Img" />
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
@@ -98,7 +98,7 @@ export default function classroom() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Image src={computerscience} height={100} width={200} alt="Img" />
+              <Image src={computerscience} height={200} width={200} alt="Img" />
             </CardContent>
             <CardFooter></CardFooter>
           </Card>
