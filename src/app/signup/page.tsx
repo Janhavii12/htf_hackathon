@@ -19,12 +19,12 @@ export default function signup() {
   return (
     <div className="flex h-screen">
       <div
-        className="w-1/2 bg-cover"
+        className="bg-cover"
         style={{
           backgroundImage: "../../assets/images/signup.jpg",
         }}
       />
-      <div className="w-1/2 flex flex-col justify-center px-16">
+      <div className=" w-[60vw] flex flex-col justify-center px-16">
         <h1 className="text-5xl font-bold mb-4">Sign up</h1>
         <p className="mb-12">Enter your details to start quizzing</p>
         <form className="space-y-6">
