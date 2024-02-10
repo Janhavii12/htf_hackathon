@@ -2,6 +2,7 @@ import { Button } from "../ui/button";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
 import profile from "../../../assets/profile.png";
+import Link from "next/link";
 
 export default function SideNav() {
   return (
@@ -28,15 +29,23 @@ export default function SideNav() {
           </span>
         </div>
         <nav className="flex flex-col space-y-1">
-          <Button className="bg-[#a1d777] text-left text-md w-40">
-            Classroom
-          </Button>
-          <Button className="bg-[#a1d777] text-left text-md w-40">
-            Quizzes
-          </Button>
-          <Button className="bg-[#a1d777] text-left text-md w-40">
-            Performance
-          </Button>
+          <Link href="/classroom">
+            <Button className="bg-[#a1d777] text-left text-md w-40">
+              Classroom
+            </Button>
+          </Link>
+          <Link href="/quizzes">
+            <Button className="bg-[#a1d777] text-left text-md w-40">
+              Quizzes
+            </Button>
+          </Link>
+
+          <Link href="/charts">
+            <Button className="bg-[#a1d777] text-left text-md w-40">
+              Performance
+            </Button>
+          </Link>
+
           {/* <Button className="bg-[#a1d777] text-left text-sm"></Button> */}
           <div className="mb-200">
             <Button className="bg-[#a1d777] text-left text-md w-40">
@@ -48,7 +57,8 @@ export default function SideNav() {
           <div className="mb-10">
             <Button className="bg-[#a1d777] text-left text-md">Settings</Button>
           </div>
-          <div className="mb-10">
+          npx shadcn-ui@latest add select
+/,          <div className="mb-10">
             <Button className="bg-[#a1d777] text-left text-md">Logout</Button>
           </div>
         </div>

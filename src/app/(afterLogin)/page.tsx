@@ -8,7 +8,7 @@ export default function Homepage() {
       <div className="bg-[url('/homepage.jpg')]">
         {/* <Image src={homepageImage} fill alt="Homepage Image" /> */}
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          This is Homepage
+          Signup
         </button>
       </div>
     </Link>
