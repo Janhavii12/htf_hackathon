@@ -21,26 +21,36 @@ export default function SideNav() {
               className="rounded-full"
             />
           </div>
-          <span className="font-bold text-sm">
+          <span className="font-bold text-md">
             Welcome to
             <br />
-            Join the Learning
+            LEARN ASSIST
           </span>
         </div>
         <nav className="flex flex-col space-y-1">
-          <Button className="bg-[#a1d777] text-left text-sm">Dashboard</Button>
-          <Button className="bg-[#a1d777] text-left text-sm">Quizzes</Button>
-          <Button className="bg-[#a1d777] text-left text-sm">
+          <Button className="bg-[#a1d777] text-left text-md w-40">
+            Classroom
+          </Button>
+          <Button className="bg-[#a1d777] text-left text-md w-40">
+            Quizzes
+          </Button>
+          <Button className="bg-[#a1d777] text-left text-md w-40">
             Performance
           </Button>
-          <Button className="bg-[#a1d777] text-left text-sm">
-            Study Materials
-          </Button>
-          <Button className="bg-[#a1d777] text-left text-sm">Resources</Button>
+          {/* <Button className="bg-[#a1d777] text-left text-sm"></Button> */}
+          <div className="mb-200">
+            <Button className="bg-[#a1d777] text-left text-md w-40">
+              Resources
+            </Button>
+          </div>
         </nav>
-        <div className="flex mb-[10px] gap-[10px]">
-          <Button className="bg-[#a1d777] text-left text-sm">Settings</Button>
-          <Button className="bg-[#a1d777] text-left text-sm">Logout</Button>
+        <div className="flex flex-col space-y-4">
+          <div className="mb-10">
+            <Button className="bg-[#a1d777] text-left text-md">Settings</Button>
+          </div>
+          <div className="mb-10">
+            <Button className="bg-[#a1d777] text-left text-md">Logout</Button>
+          </div>
         </div>
       </div>
     </>
