@@ -38,7 +38,6 @@
  */
 
 // import { Button } from "@/components/ui/button";
-
 import {
     CardTitle,
     CardDescription,
@@ -54,7 +53,6 @@ import {
   import computerscience from "../../../assets/csclass.jpg";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -62,18 +60,17 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+  
+
 import {
   DropdownMenu, DropdownMenuContent,  DropdownMenuLabel,  DropdownMenuRadioGroup,  DropdownMenuRadioItem,  DropdownMenuSeparator,  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-
-  
-  let name: string = "Class id";
+  let name: string = "pdf_name";
   let user_id: string="user id";
-  let position: String = "true";
-  let setPosition: string = "false";
-
-
-  export default function upload_file() {
+  
+  
+  
+  export default function resources() {
     return (
       
       <div className="min-h-screen bg-gray-100 w-screen">
@@ -84,9 +81,9 @@ import {
           <div className="grid place-items-center max-h-screen">
             
             
-            <ScrollArea className="h-[500px] w-[600px] rounded-md border">
+            <ScrollArea className="h-[500px] w-[600px] rounded-md border bg-gray-200">
       <div className="p-4 flex flex-col gap-4">
-        <h4 className="mb-4 text-sm font-medium leading-none"> Uploaded files</h4>
+        <h4 className="mb-4 text-sm font-medium leading-none">Resources</h4>
        
         <Card className="w-90%">
               <CardHeader>
@@ -103,13 +100,9 @@ import {
        
       </div>
     </ScrollArea>
-    <div className="grid w-full max-w-sm items-center gap-1.5">
-     
-      
-      </div>
+  
             </div>
                 <div className=" mt-6 bottom-5  flex flex-col items-center transform translateX(-50%)  rounded-md">
-
                 <Popover>
       <PopoverTrigger asChild>
       <Button className="bg-[#a1d777]" >

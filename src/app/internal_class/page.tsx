@@ -57,10 +57,11 @@ import meet from "../../../assests_janhavi/meet.png";
 import upload from "../../../assests_janhavi/upload.png";
 import resources from "../../../assests_janhavi/resources.png";
 import { Upload } from "lucide-react";
+import Link from "next/link";
 
 let name: string = "Class id";
 
-export default function homepage() {
+export default function internal_class() {
   return (
     <div className="min-h-screen bg-gray-100">
       <div>
@@ -84,12 +85,17 @@ export default function homepage() {
             <Card className="w-100% ">
               <CardContent>
               <div className="flex items-center justify-between">
-                <div className="ml-12 mr-6 mt-6" >
-                    <Button className="bg-[#a1d777]" >
-                      open meet
+                
+                <div className="ml-9 mr-10 mt-6 " >
+                <Link href="https://meetapphtf1.onrender.com/">
+                <Button className="bg-[#a1d777]" >
+                      upload
                     </Button>
+      </Link>
+                    
+                  </div>
                   </div>                  
-                </div>
+               
               </CardContent>
             </Card>
           </div>
@@ -110,9 +116,12 @@ export default function homepage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                 <div className="ml-12 mr-10 mt-6 " >
-                    <Button className="bg-[#a1d777]" >
+                <Link href="/upload_file">
+                <Button className="bg-[#a1d777]" >
                       upload
                     </Button>
+      </Link>
+                    
                   </div>
                 </div>
               </CardContent>
@@ -132,10 +141,14 @@ export default function homepage() {
               <CardContent>
                 <div className="flex items-center justify-between ">
                  
-                  <div className="ml-12 mr-3 mt-6" >
-                    <Button className="bg-[#a1d777]" >
-                      resources
+                <div className="ml-9 mr-10 mt-6 " >
+                <Link href="/resources">
+                <Button className="bg-[#a1d777]" >
+                      Resources
                     </Button>
+      </Link>
+                    
+                 
                   </div>
                 </div>
               </CardContent>
