@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nivo/bar": "^0.55.0",
+    "@nivo/bar": "^0.84.0",
     "@nivo/line": "^0.55.0",
     "@nivo/pie": "^0.55.0",
     "@radix-ui/react-avatar": "^1.0.4",
