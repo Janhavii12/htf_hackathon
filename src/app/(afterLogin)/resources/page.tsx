@@ -73,7 +73,7 @@ import {
 let name: string = "pdf_name";
 let user_id: string = "user id";
 
-export default function resources() {
+export default function Resources() {
   return (
     <div className="min-h-screen bg-gray-100 w-screen">
       <div className="flex-1 p-6">

@@ -1,9 +1,8 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/ixTj6H5RgtQ
+ * @see https://v0.dev/t/mWWkyOblGRA
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-"use client";
 import { Input } from "@/components/ui/input";
 import {
   SelectValue,
@@ -16,100 +15,45 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Signup() {
+export default function Component() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
-      <div
-        className="absolute inset-0 bg-cover"
-        style={{
-          backgroundImage: `url('/assets/signup.jpg')`,
-        }}
-      />
-      <div className=" w-[40vw] flex flex-col justify-center px-16">
-        <h1 className="text-5xl font-bold mb-4">Sign up</h1>
-        <p className="mb-12">Enter your details to start quizzing</p>
-        <form className="space-y-6">
-          <div>
-            <label
-              className="block text-sm font-medium mb-1"
-              htmlFor="full-name"
-            >
-              Full name
-            </label>
-            <Input id="full-name" placeholder="Your full name" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="email">
-              Email
-            </label>
-            <Input
-              id="email"
-              placeholder="Enter your email address"
-              type="email"
-            />
-          </div>
-          <div>
-            <label
-              className="block text-sm font-medium mb-1"
-              htmlFor="username"
-            >
-              Username
-            </label>
-            <Input id="username" placeholder="Create a username" />
-          </div>
-          <div>
-            <label
-              className="block text-sm font-medium mb-1"
-              htmlFor="password"
-            >
-              Create a password
-            </label>
-            <Input id="password" placeholder="********" type="password" />
-          </div>
-          <div>
-            <label
-              className="block text-sm font-medium mb-1"
-              htmlFor="confirm-password"
-            >
-              Confirm password
-            </label>
-            <Input
-              id="confirm-password"
-              placeholder="********"
-              type="password"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium mb-1" htmlFor="role">
-              Role to join
-            </label>
+    <div className="min-h-screen grid grid-cols-2">
+      <div className="bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center" />
+      <div className="flex flex-col justify-center px-36">
+        <h1 className="text-5xl font-bold mb-2">Sign up</h1>
+        <p className="text-lg mb-8">Enter your details to start quizzing</p>
+        <form>
+          <div className="flex flex-col space-y-6">
+            <Input placeholder="Your full name" type="text" />
+            <Input placeholder="Enter your email address" type="email" />
+            <Input placeholder="Create a username" type="text" />
+            <Input placeholder="Create a password" type="password" />
+            <Input placeholder="Confirm password" type="password" />
             <Select>
               <SelectTrigger id="role">
-                <SelectValue placeholder="Select role" />
+                <SelectValue placeholder="Enter your role" />
               </SelectTrigger>
               <SelectContent position="popper">
                 <SelectItem value="student">Student</SelectItem>
                 <SelectItem value="teacher">Teacher</SelectItem>
-                <SelectItem value="administrator">Administrator</SelectItem>
+                <SelectItem value="other">Other</SelectItem>
               </SelectContent>
             </Select>
+            <div className="flex items-center space-x-2">
+              <Checkbox id="terms" />
+              <label
+                className="text-sm font-medium leading-none"
+                htmlFor="terms"
+              >
+                I agree with the Terms and Privacy Policy.
+              </label>
+            </div>
+            <Button className="bg-green-500 hover:bg-green-600">Sign up</Button>
           </div>
-          <div className="flex items-center">
-            <Checkbox id="terms" />
-            <label className="ml-2 text-sm" htmlFor="terms">
-              I agree with the Terms and Privacy Policy.
-            </label>
-          </div>
-          <Link href="/classroom">
-            <Button className="w-full bg-green-500 hover:bg-green-600">
-              Sign up
-            </Button>
-          </Link>
         </form>
-        Link
-        <p className="mt-4 text-center text-sm">
+        <p className="mt-4 text-center">
           Already have an account?
-          <Link className="text-green-600 hover:underline" href="/classroom">
+          <Link className="text-green-500 hover:underline" href="#">
             Log in
           </Link>
         </p>
