@@ -4,6 +4,7 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 "use client";
+import { useSignup } from '../../../hooks/useSignup';
 import { Input } from "@/components/ui/input";
 import {
   SelectValue,
@@ -17,6 +18,15 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Signup() {
+  const {
+    formData,
+    setFormData,
+    isLoading,
+    error,
+    successMessage,
+    handleSubmit,
+  } = useSignup();
+
   return (
     <div className="flex items-center justify-center w-screen h-screen">
       <div
@@ -100,13 +110,18 @@ export default function Signup() {
               I agree with the Terms and Privacy Policy.
             </label>
           </div>
-          <Button className="w-full bg-green-500 hover:bg-green-600">
+          <Button className="w-full bg-green-500 hover:bg-green-600"
+            onClick={handleSubmit}
+            disabled={isLoading}>
             Sign up
           </Button>
+          {error && <p className="text-red-500">{error}</p>}
+          {successMessage && <p className="text-green-500">{successMessage}</p>}
+
         </form>
         <p className="mt-4 text-center text-sm">
           Already have an account?
-          <Link className="text-green-600 hover:underline" href="#">
+          <Link href="#">
             Log in
           </Link>
         </p>

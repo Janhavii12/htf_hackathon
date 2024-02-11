@@ -20,11 +20,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <div
           className="flex h-screen w-screen"
-          // style={{
-          //   backgroundImage: `url('htf_hackathon/assets/homepage.jpg')`,
-          //   backgroundSize: "cover",
-          //   backgroundPosition: "center",
-          // }}
+        // style={{
+        //   backgroundImage: `url('htf_hackathon/assets/homepage.jpg')`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
         >
           <SideNav />
           {children}
