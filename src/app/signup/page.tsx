@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/mWWkyOblGRA
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Input } from "@/components/ui/input";
 import {
   SelectValue,
@@ -19,7 +14,9 @@ export default function Component() {
   return (
     <div className="min-h-screen grid grid-cols-2">
       <div className="bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center" />
-      <div className="flex flex-col justify-center px-36">
+      <div className="flex flex-col justify-center px-40">
+        {" "}
+        {/* Adjusted px value */}
         <h1 className="text-5xl font-bold mb-2">Sign up</h1>
         <p className="text-lg mb-8">Enter your details to start quizzing</p>
         <form>
@@ -48,7 +45,11 @@ export default function Component() {
                 I agree with the Terms and Privacy Policy.
               </label>
             </div>
-            <Button className="bg-green-500 hover:bg-green-600">Sign up</Button>
+            <Link href="/classroom">
+              <Button className="bg-green-500 hover:bg-green-600">
+                Sign up
+              </Button>
+            </Link>
           </div>
         </form>
         <p className="mt-4 text-center">
